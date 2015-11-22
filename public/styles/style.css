@@ -1,0 +1,35 @@
+.search-container {
+  display: none;
+}
+
+.auth-container {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.searching {
+  position: absolute;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: none;
+}
+
+.searching h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.image {
+  padding: 10px;
+}
+
+.all-pics {
+  margin-top: 40px;
+}

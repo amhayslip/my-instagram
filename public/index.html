@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script id="image" type="text/x-handlebars-template">
+    <div class="col-md-4" data-tag="{{ tag }}">
+      <div class="image">
+	     <img src="{{ image }}"></img>
+      </div>
+    </div>
+	</script>
+
+  <script id="tag" type="text/x-handlebars-template">
+    <button class="btn"> {{ tag}} </button>
+  </script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+
+  <div class="searching">
+    <h1>Searching</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <div class="page-header">
+        <h1>Searchtagram</h1>
+      </div>
+
+      <div class="auth-container">
+        <h3>To start Searching, Please Log In!</h3>
+        <button class="btn btn-default auth">Log In</button>
+      </div>
+
+
+      <div class="search-container">
+
+        <div class="tags"></div>
+
+        <form class="search-form show">
+          <h3>Type in a Hashtag and Click Search</h3>
+
+          <div class="form-group">
+            <input type="text"
+              class="search-input form-control"
+              placeholder="Hashtags">
+            </input>
+          </div>
+          <button class="btn btn-primary search">Search</button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="all-pics">
+    </div>
+  </div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
